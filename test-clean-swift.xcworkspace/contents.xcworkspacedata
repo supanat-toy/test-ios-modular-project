@@ -2,13 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MyPlayground.playground">
+      location = "group:Application/Application.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Core/Core.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Application/Application.xcodeproj">
+      location = "group:TestModule/TestModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MyPlayground.playground">
    </FileRef>
    <FileRef
       location = "group:test-clean-swift.xcodeproj">

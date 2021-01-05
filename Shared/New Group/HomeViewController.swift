@@ -59,6 +59,7 @@ class HomeViewController: UIViewController, GCDAsyncSocketDelegate {
         let a = AAA(name: "", passowrd: "")
         print("name: \(a.name)")
         a.getValue()
+        AAA.getA()
         
         let b = DataModel()
         b.classAString;
