@@ -80,6 +80,8 @@
 		B2289D4F25A2C75800859C63 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2289D5025A2C75800859C63 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		B2289D5125A2C75800859C63 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		B2F4E69525A4409A008FF809 /* test-clean-swift (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-clean-swift (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2F4E69625A4409A008FF809 /* test-clean-swift (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-clean-swift (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
 		C8C8722D4A7D8935E119708B /* Pods_test_clean_swift__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_clean_swift__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,8 @@
 				B2289D0925A2C71900859C63 /* test_clean_swiftApp.swift */,
 				B2289D0A25A2C71900859C63 /* ContentView.swift */,
 				B2289D0B25A2C71A00859C63 /* Assets.xcassets */,
+				B2F4E69525A4409A008FF809 /* test-clean-swift (iOS)-Bridging-Header.h */,
+				B2F4E69625A4409A008FF809 /* test-clean-swift (macOS)-Bridging-Header.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -319,9 +323,11 @@
 				TargetAttributes = {
 					B2289D0F25A2C71A00859C63 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					B2289D1725A2C71A00859C63 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					B2289D1F25A2C71A00859C63 = {
 						CreatedOnToolsVersion = 12.3;
@@ -570,6 +576,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -629,6 +636,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -652,7 +660,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -663,6 +673,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "toy.test-clean-swift";
 				PRODUCT_NAME = "test-clean-swift";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/test-clean-swift (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -674,7 +686,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -685,6 +699,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "toy.test-clean-swift";
 				PRODUCT_NAME = "test-clean-swift";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/test-clean-swift (iOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -697,6 +712,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -710,6 +726,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "toy.test-clean-swift";
 				PRODUCT_NAME = "test-clean-swift";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/test-clean-swift (macOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -720,6 +738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -733,6 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "toy.test-clean-swift";
 				PRODUCT_NAME = "test-clean-swift";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/test-clean-swift (macOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -60,6 +60,9 @@ class HomeViewController: UIViewController, GCDAsyncSocketDelegate {
         print("name: \(a.name)")
         a.getValue()
         
+        let b = DataModel()
+        b.classAString;
+        
         let coreModel = CoreModel()
         coreModel.getValue()
         
